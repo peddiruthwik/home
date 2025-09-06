@@ -1,0 +1,60 @@
+/* styles.css */
+/* ... existing styles ... */
+
+.registration-page { /* New class for registration page styles */
+    max-width: 600px; /* Smaller container for the form */
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.registration-page h1 {
+    text-align: center;
+    color: #800080; /* Purple heading */
+    margin-bottom: 30px;
+}
+
+.registration-page .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #550000;
+}
+
+.registration-page input[type="text"],
+.registration-page input[type="email"],
+.registration-page input[type="tel"],
+.registration-page input[type="password"],
+.registration-page textarea,
+.registration-page select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.registration-page button[type="submit"] {
+    background-color: #ff9900; /* Orange button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%; /* Full width button */
+}
+
+.registration-page button[type="submit"]:hover {
+    background-color: #cc7a00;
+    transform: scale(1.02);
+}

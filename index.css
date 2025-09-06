@@ -1,0 +1,268 @@
+/* styles.css */
+
+/* -------------------- General Styles -------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #fcfafa;
+    background: linear-gradient(to bottom, #f8f0fc, #fff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* -------------------- Header Styles -------------------- */
+header {
+    width: 100%;
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    margin-right: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: #800080;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Important for responsiveness */
+}
+
+nav li {
+    margin: 5px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+/* -------------------- Hero Section Styles -------------------- */
+.hero {
+    width: 100%;
+    background-image: url('blood-hero.jpg'); /* Make sure path is correct */
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; /* Added box-sizing */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 44, 50, 0.177);
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 1200px; /* Use max-width here */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.search-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-filters select,
+.search-filters button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    min-width: 180px;
+    box-sizing: border-box;
+    font-size: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='purple' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    color: #333;
+}
+
+.search-filters button {
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-filters button:hover {
+    background-color: #cc7a00;
+    transform: scale(1.03);
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.request-blood,
+.find-donor {
+    background-color: #ff9900;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 250px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.request-blood:hover,
+.find-donor:hover {
+    transform: scale(1.05);
+    background-color: #cc7a00;
+}
+
+/* -------------------- Registration Page Styles -------------------- */
+.registration-page {
+    width: 100%; /* Take full width of parent */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.registration-page h1 {
+    text-align: center;
+    color: #800080;
+    margin-bottom: 20px;
+}
+
+.registration-page .form-group {
+    margin-bottom: 15px;
+}
+
+.registration-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #550000;
+}
+
+.registration-page input[type="text"],
+.registration-page input[type="email"],
+.registration-page input[type="tel"],
+.registration-page input[type="password"],
+.registration-page textarea,
+.registration-page select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.login-container button[type="submit"] {
+    background-color: #ff9900; /* Orange Button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #cc7a00;
+}
+footer {
+    background-color: #800080; /* Purple Footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 20px;
+}
